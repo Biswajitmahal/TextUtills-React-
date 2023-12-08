@@ -51,6 +51,7 @@ export default function TextForm(props) {
           newtext.click();
           props.showAlert("Your Text is Downloded","success")
     }
+    
 
     const [text,setText]= useState('');
    
@@ -77,6 +78,7 @@ export default function TextForm(props) {
     <h1>Your Text Summary</h1>
     <p>{text.split(" ").length} words and {text.length} characters</p>
     <p>{0.008*text.split(" ").length} Minutes Read</p>
+
     <h2>Preview</h2>
     <p>{text.length>0?text:"Enter Something in text mode above to preview it here"}</p>
 </div>
